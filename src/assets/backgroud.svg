@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="1440" height="300" preserveAspectRatio="none" viewBox="0 0 1440 300">
+    <g mask="url(&quot;#SvgjsMask2416&quot;)" fill="none">
+        <rect width="1440" height="240" x="0" y="0" fill="url(#SvgjsLinearGradient2417)"></rect>
+      
+    </g>
+    <defs>
+        <mask id="SvgjsMask2416">
+            <rect width="1440" height="300" fill="#fff"></rect>
+        </mask>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="65%" gradientUnits="userSpaceOnUse" id="SvgjsLinearGradient2417">
+            <stop stop-color="rgba(224, 198, 29, 0.4)" offset="0"></stop>
+            <stop stop-color="rgba(255, 255, 255, 0.1)" offset="1"></stop>
+        </linearGradient>
+    </defs>
+</svg>

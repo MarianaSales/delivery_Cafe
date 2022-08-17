@@ -1,0 +1,12 @@
+{
+    "orders": [
+        {
+            "id": "1",
+            "image": "expresso-tradicional",
+            "label": "Tradicional",
+            "title": "Expresso Tradicional",
+            "description": "O tradicional café feito com agua quente e grãos moídos",
+            "price": "9.90"
+        }
+    ]
+}
