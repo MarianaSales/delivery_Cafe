@@ -1,5 +1,5 @@
 import { createContext, useState } from 'react';
-import api from '../lib/axios';
+import api from '../lib/api';
 import { CartProviderProps } from './CartContext';
 
 type Coordinates = {

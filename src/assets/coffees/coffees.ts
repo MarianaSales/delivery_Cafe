@@ -4,14 +4,13 @@ import AuLatte from './cafe-com-leite.svg';
 import Capuccino from './capuccino.svg';
 import Cubano from './cubano.svg';
 import Expresso from './expresso-tradicional.svg';
-import ExpressoCream from './expresso-creamoso.svg';
+import ExpressoCream from './expresso-cremoso.svg';
 import Havaiano from './havaiano.svg';
 import HotChocolatte from './chocolate-quente.svg';
-import IcedCoffee from './iced-coffee.png';
 import Ireland from './irlandes.svg';
 import Latte from './latte.svg';
 import Macchiatto from './macchiato.svg';
-import Mochaccino from './mochaccino.svg';
+import Mochaccino from './mocaccino.svg';
 
 type Category = 'standard' | 'milky' | 'alcoholic' | 'special' | 'iced';
 
@@ -88,14 +87,14 @@ export const coffees = [
         id: 'hpt-choco-me7j',
         categories: ['special', 'milky'],
     },
-    {
-        name: 'Iced Coffee',
-        description: 'Drink prepared with Expresso coffee and ice cubes',
-        price: 7.5,
-        image: IcedCoffee,
-        id: 'iced-coffee-o28d',
-        categories: ['standard', 'iced'],
-    },
+    // {
+    //     name: 'Iced Coffee',
+    //     description: 'Drink prepared with Expresso coffee and ice cubes',
+    //     price: 7.5,
+    //     image: IcedCoffee,
+    //     id: 'iced-coffee-o28d',
+    //     categories: ['standard', 'iced'],
+    // },
     {
         name: 'Irelandes',
         description: 'Drink based on coffee, ireland whisky, sugar and chantilly',

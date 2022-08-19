@@ -5,7 +5,7 @@
     "type": "module",
     "scripts": {
         "dev": "vite",
-        "dev:server": "json-server sever.json -p 3001 -w -d orders",
+        "dev:server": "json-server sever.json -p 3000 -w -d cart",
         "lint": "eslint src --ext .tsx,.ts",
         "lint:fix": "eslint src --ext .tsx,.ts --fix",
         "build": "tsc && vite build",

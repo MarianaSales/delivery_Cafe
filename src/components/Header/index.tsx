@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import { Counter, HeaderActions, HeaderContainer, Link } from './styles';
-import logo from '../../assets/img/logo.svg';
+import logo from '../../assets/logo.svg';
 import { MapPin, ShoppingCart, X as IconX } from 'phosphor-react';
 import { useContextSelector } from 'use-context-selector';
 import { GeoLocationContext } from '../../contexts/GeolocationContext';

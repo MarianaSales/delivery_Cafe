@@ -1,6 +1,6 @@
-import { createGlobalStyle } from 'styled-components'
-import { ThemeType } from './themes/default'
-import back from '../assets/back.svg'
+import { createGlobalStyle } from 'styled-components';
+import { ThemeType } from './themes/default';
+import back from '../assets/img/back.svg';
 
 export const GlobalStyles = createGlobalStyle<{ theme: ThemeType }>`
   * {
@@ -22,9 +22,9 @@ export const GlobalStyles = createGlobalStyle<{ theme: ThemeType }>`
   input, button {
     font-family: 'Roboto', sans-serif;
   }
-`
+`;
 
 export const Sizes = {
-  small: '(max-width: 768px)',
-  medium: '(min-width: 768px) and (max-width: 1280px)',
-}
+    small: '(max-width: 768px)',
+    medium: '(min-width: 768px) and (max-width: 1280px)',
+};
