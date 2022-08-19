@@ -1,12 +1,12 @@
-import { List } from 'phosphor-react';
-import { Item } from './components/Header/styles';
-import { HomeContainer } from './styles';
+import { CoffeeList } from './components/CoffeeList';
+import { HomeContainer } from './components/Home';
+import { Container } from './styles';
 
 export function Home() {
     return (
-        <HomeContainer>
-            <Item />
-            <List />
-        </HomeContainer>
+        <Container>
+            <HomeContainer />
+            <CoffeeList />
+        </Container>
     );
 }
