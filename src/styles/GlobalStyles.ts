@@ -6,22 +6,35 @@ export const GlobalStyles = createGlobalStyle<{ theme: ThemeType }>`
   * {
     margin: 0;
     padding: 0;
-  }
-  body {
     box-sizing: border-box;
+    outline: none;
+  }
+
+  body {
     -webkit-font-smoothing: antialiased;
-    font-family: 'Roboto', sans-serif;
-    font-size: 0.875rem;
-    background-color: ${(props) => props.theme.grey_100};
+    background-color: ${(props) => props.theme['grey_100']};
     background: url(${back}) no-repeat center center fixed;
+    color: ${(props) => props.theme['grey_700']};
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
   }
-  input, button {
+
+  body, input, textarea, button {
     font-family: 'Roboto', sans-serif;
+    font-size: 0.875rem;
+
   }
+
+  button {
+    cursor: pointer;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
 `;
 
 export const Sizes = {

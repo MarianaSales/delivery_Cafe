@@ -1,45 +1,25 @@
-import { NavLink } from 'react-router-dom';
-import { Counter, HeaderActions, HeaderContainer, Link } from './styles';
+import { ButtonContainer, HeaderContainer, LocationButton, LogoContainer } from './styles';
 import logo from '../../assets/logo.svg';
-import { MapPin, ShoppingCart, X as IconX } from 'phosphor-react';
-import { useContextSelector } from 'use-context-selector';
-import { GeoLocationContext } from '../../contexts/GeolocationContext';
-import { CartContext } from '../../contexts/CartContext';
+import { MapPinLine } from 'phosphor-react';
+import { ShoppingCartSimple } from 'phosphor-react';
 
 export function Header() {
-    const address = useContextSelector(GeoLocationContext, (context) => {
-        return context.address;
-    });
-    const cart = useContextSelector(CartContext, (context) => {
-        return context.cart;
-    });
     return (
         <HeaderContainer>
-            <NavLink to="/">
-                <img src={logo} alt="" />
-            </NavLink>
-            <HeaderActions>
-                <MapPin size={24} weight="fill" />
-                {Object.keys(address).length ? (
-                    <span>
-                        {`${address.city}`}, {`S{address.state}`}
-                    </span>
-                ) : (
-                    <IconX
-                        color="red"
-                        weight="fill"
-                        size={32}
-                        style={{
-                            position: 'absolute',
-                            right: 4,
-                        }}
-                    />
-                )}
-                <Link to="/checkout">
-                    {!!cart.length && <Counter>{cart.length}</Counter>}
-                    <ShoppingCart />
-                </Link>
-            </HeaderActions>
+            <LogoContainer>
+                <div>
+                    <img src={logo} alt="Um copo de café" />
+                </div>
+            </LogoContainer>
+            <ButtonContainer>
+                <LocationButton>
+                    <MapPinLine size={24} width="fill" color="purple" />
+                    Fortaleza,Ceará
+                </LocationButton>
+                <LocationButton>
+                    <ShoppingCartSimple size={24} />
+                </LocationButton>
+            </ButtonContainer>
         </HeaderContainer>
     );
 }

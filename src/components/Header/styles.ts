@@ -1,72 +1,42 @@
-import { NavLink } from 'react-router-dom';
-
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
 export const HeaderContainer = styled.header`
+    width: 100%;
     height: 6.5rem;
+    background: ${(props) => props.theme['grey_100']};
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 0 1rem;
-`;
+    justify-content: center;
 
-export const HeaderActions = styled.div`
-    display: flex;
-    gap: 0.5rem;
-    & > div:first-child {
-        padding: 0.5rem 1rem;
-        border-radius: 6px;
+    > div {
         display: flex;
         align-items: center;
-        gap: 0.25rem;
-        background: ${(props) => props.theme.purple_300};
-        color: ${(props) => props.theme.purple_700};
-        border: 1px solid ${(props) => props.theme.purple_500};
-    }
-    & > div > svg {
-        color: ${(props) => props.theme.purple_700};
-        font-size: 1.25rem;
+        justify-content: space-between;
     }
 `;
+export const LogoContainer = styled.div`
+    width: 100%;
+    max-width: 70rem;
+    margin-right: auto;
+    margin-left: auto;
+`;
 
-export const Link = styled(NavLink)`
-    border-radius: 6px;
-    background-color: ${(props) => props.theme.yellow_300};
-    color: ${(props) => props.theme.yellow_700};
-    font-size: 1.25rem;
+export const ButtonContainer = styled.div`
     display: flex;
     align-items: center;
-    border: none;
-    padding: 0.5rem;
-    border: 1px solid ${(props) => props.theme.yellow_700};
-    position: relative;
-    transition: all 0.2s;
-    &:hover:not(:disabled) {
-        filter: brightness(1.05);
-        cursor: pointer;
-        border: 1px solid ${(props) => props.theme.yellow_700};
-    }
-    &:disabled {
-        cursor: not-allowed;
-    }
+    gap: 0.75rem;
 `;
 
-export const Counter = styled.div`
+export const LocationButton = styled.button`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    min-height: 2.3rem;
+    height: 2.3rem;
+    border-radius: 6px;
+    border: none;
+    padding: 0 0.5rem;
+    position: relative;
     font-size: 0.875rem;
-    font-weight: 700;
-    border-radius: 9999px;
-    position: absolute;
-    background-color: ${(props) => props.theme.yellow_700};
-    color: ${(props) => props.theme.white};
-    padding: 2px 6px;
-    right: -8px;
-    top: -10px;
-    ${({ children }) =>
-        children &&
-        children.toString().length > 1 &&
-        css`
-            right: -16px;
-        `}
 `;
