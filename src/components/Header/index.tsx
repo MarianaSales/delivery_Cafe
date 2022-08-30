@@ -7,7 +7,7 @@ export function Header() {
     return (
         <HeaderContainer>
             <LogoContainer>
-                <div>
+                <div className="container">
                     <img src={logo} alt="Um copo de café" />
                 </div>
             </LogoContainer>
