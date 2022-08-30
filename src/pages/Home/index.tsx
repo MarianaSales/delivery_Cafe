@@ -1,3 +1,10 @@
+import { LandingPage } from './components/LandingPage';
+import { HomeContainer } from './styles';
+
 export function HomePage() {
-    return <h1>Olá</h1>;
+    return (
+        <HomeContainer>
+            <LandingPage />
+        </HomeContainer>
+    );
 }

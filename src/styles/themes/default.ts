@@ -20,6 +20,12 @@ export interface ThemeType {
     grey_900: string;
 
     red_100: string;
+
+    xl: string;
+    l: string;
+    m: string;
+    s: string;
+    xs: string;
 }
 
 export const defaultTheme: ThemeType = {
@@ -44,4 +50,10 @@ export const defaultTheme: ThemeType = {
     grey_900: '#272221',
 
     red_100: '#f84747',
+
+    xl: '3rem',
+    l: '2rem',
+    m: '1.5rem',
+    s: '1.2rem',
+    xs: '1.125px',
 };

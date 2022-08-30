@@ -12,12 +12,12 @@ export function Header() {
                 </div>
             </LogoContainer>
             <ButtonContainer>
-                <LocationButton>
-                    <MapPinLine size={24} width="fill" color="purple" />
-                    Fortaleza,Ceará
+                <LocationButton variant="purple">
+                    <MapPinLine size={20} weight="fill" />
+                    Fortaleza, CE
                 </LocationButton>
-                <LocationButton>
-                    <ShoppingCartSimple size={24} />
+                <LocationButton variant="yellow">
+                    <ShoppingCartSimple size={24} weight="fill" />3
                 </LocationButton>
             </ButtonContainer>
         </HeaderContainer>
