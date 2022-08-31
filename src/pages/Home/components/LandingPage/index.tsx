@@ -27,6 +27,7 @@ export function LandingPage() {
                     </section>
 
                     <LandingPageItens>
+<<<<<<< Updated upstream
                         <InformationIcons
                             icon={<ShoppingCartSimple weight="fill" />}
                             text="Compra simples e segura"
@@ -47,6 +48,12 @@ export function LandingPage() {
                             text="O café chega fresquinho até você"
                             iconColor={theme.purple_500}
                         />
+=======
+                        <div>Compra simples e segura</div>
+                        <p>Entrega rápida e rastreada</p>
+                        <p>Embalagem mantém o café intacto</p>
+                        <p>O café chega fresquinho até</p>
+>>>>>>> Stashed changes
                     </LandingPageItens>
                 </div>
                 <img src={coffee} alt="" />
