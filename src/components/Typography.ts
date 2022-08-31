@@ -23,7 +23,7 @@ export const Title = styled.h1<TitleProps>`
 export const Text = styled.p<TextProps>`
     color: ${({ color, theme }) => theme[`${color ?? 'grey_700'}`]};
     font-size: ${({ size, theme }) => theme[`${size ?? 'm'}`]};
-    font-family: 'Baloo 2', sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 130%;
     font-weight: ${({ weight }) => weight ?? 400};
 `;

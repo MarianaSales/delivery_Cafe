@@ -26,6 +26,10 @@ export interface ThemeType {
     m: string;
     s: string;
     xs: string;
+
+    tag: string;
+    button: string;
+    button_s: string;
 }
 
 export const defaultTheme: ThemeType = {
@@ -56,4 +60,8 @@ export const defaultTheme: ThemeType = {
     m: '1.5rem',
     s: '1.2rem',
     xs: '1.125px',
+
+    tag: '0.625rem',
+    button: '0.875rem',
+    button_s: '0.75rem',
 };

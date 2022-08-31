@@ -8,14 +8,14 @@ export const LandingPageContainer = styled.section`
     align-items: center;
     justify-content: center;
     position: absolute;
-    padding: 32px 160px;
+    /* padding: 32px 160px; */
 `;
 export const LandingPageContent = styled.div`
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 16px;
+    gap: 3.5rempx;
 `;
 
 export const LandingPageTitle = styled(Title)`

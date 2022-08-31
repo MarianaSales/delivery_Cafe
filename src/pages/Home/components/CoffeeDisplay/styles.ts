@@ -1,8 +1,29 @@
 import styled from 'styled-components';
 
 export const CoffeeDisplayContainer = styled.section`
-    width: 193px;
+    /* width: 193px;
+    top: 690px;
+    left: calc(50% - 193px / 2 - 463.5px);
     height: 42px;
-    top: 32px;
-    left: 160px;
+    align-items: center;
+    position: absolute;
+    display: flex; */
+    position: absolute;
+    height: 42px;
+    top: 690px;
+    width: 100%;
+    display: grid;
+    left: calc(50% - 193px / 2 - 463.5px);
+`;
+
+export const CoffeeDisplayList = styled.div`
+    width: 1120px;
+    height: 1360px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2rem;
+    row-gap: 2.5rem;
+    margin-top: 3.5rem;
+    left: calc(50% - 1120px / 2);
+    top: 128px;
 `;
