@@ -5,7 +5,7 @@ import { CoffeeDisplayContainer, CoffeeDisplayList } from './styles';
 
 export function CoffeeDisplay() {
     return (
-        <CoffeeDisplayContainer>
+        <CoffeeDisplayContainer className="container">
             <Title size="l" color="grey_800">
                 Nossos cafés
             </Title>

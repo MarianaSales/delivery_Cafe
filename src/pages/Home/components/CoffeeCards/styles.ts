@@ -56,10 +56,12 @@ export const CoffeeCardsDescription = styled(Text).attrs({
 `;
 
 export const CoffeeCardsFooter = styled.div`
-    width: 100%;
     display: flex;
-    align-items: center;
+    flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: 29px;
 
     > div {
         display: flex;
@@ -73,20 +75,33 @@ export const CoffeeCardsFooter = styled.div`
 `;
 
 export const AddCoffeeCard = styled.div`
-    width: 7.5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 9px;
 
-    > button {
-        width: 2.375rem;
-        height: 2.375rem;
+    height: 38px;
+    left: 24px;
+    right: 24px;
+    bottom: 20px;
+
+    button {
+        width: 3rem;
+        height: 35px;
         border: none;
         display: flex;
+
         align-items: center;
         justify-content: center;
         background: ${({ theme }) => theme['purple_700']};
         color: ${({ theme }) => theme['grey_200']};
+        gap: 18px;
         border-radius: 6px;
-        margin-left: 0.3rem;
         transition: 0.4s;
+
+        flex-grow: 0;
 
         &:hover {
             background: ${({ theme }) => theme['purple_500']};
