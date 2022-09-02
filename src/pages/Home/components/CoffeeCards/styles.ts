@@ -60,8 +60,8 @@ export const CoffeeCardsFooter = styled.div`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0px;
-    gap: 29px;
+    /* padding: 0px; */
+    gap: 10px;
 
     > div {
         display: flex;
@@ -74,18 +74,18 @@ export const CoffeeCardsFooter = styled.div`
     }
 `;
 
-export const AddCoffeeCard = styled.div`
-    width: 100%;
+export const AddCoffeeCardContainer = styled.div`
+    /* width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 38px; */
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 9px;
-
-    height: 38px;
-    left: 24px;
-    right: 24px;
-    bottom: 20px;
+    /* padding: 0px; */
 
     button {
         width: 3rem;
@@ -97,7 +97,7 @@ export const AddCoffeeCard = styled.div`
         justify-content: center;
         background: ${({ theme }) => theme['purple_700']};
         color: ${({ theme }) => theme['grey_200']};
-        gap: 18px;
+        gap: 5px;
         border-radius: 6px;
         transition: 0.4s;
 
@@ -106,5 +106,9 @@ export const AddCoffeeCard = styled.div`
         &:hover {
             background: ${({ theme }) => theme['purple_500']};
         }
+        /* > svg {
+            height: 25px;
+            justify-content: space-between;
+        } */
     }
 `;

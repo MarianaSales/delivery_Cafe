@@ -1,5 +1,5 @@
 import {
-    AddCoffeeCard,
+    AddCoffeeCardContainer,
     CoffeeCardsContainer,
     CoffeeCardsDescription,
     CoffeeCardsFooter,
@@ -60,7 +60,7 @@ export function CoffeeCards({ coffee }: CoffeeProps) {
                     </Title>
                 </div>
 
-                <AddCoffeeCard>
+                <AddCoffeeCardContainer>
                     <QuantityItems
                         size="medium"
                         onIncrease={handleIncrease}
@@ -70,7 +70,7 @@ export function CoffeeCards({ coffee }: CoffeeProps) {
                     <button onClick={handleAddToCart}>
                         <ShoppingCart size={22} weight="fill" />
                     </button>
-                </AddCoffeeCard>
+                </AddCoffeeCardContainer>
             </CoffeeCardsFooter>
         </CoffeeCardsContainer>
     );
