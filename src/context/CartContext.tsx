@@ -17,7 +17,7 @@ interface CartContextType {
     addingItemsToCart: (coffee: CartItem) => void;
     changedCartItems: (itemId: number, type: 'increase' | 'decrease') => void;
     removeItemsToCart: (itemId: number) => void;
-    cancelPurchase: () => void;
+    cleanPurchase: () => void;
 }
 
 const COFFEE_ITEMS_STORAGE_KEY = 'kikkisDeliveryService:cartItems';
@@ -75,7 +75,7 @@ export function CartContextProvider({ children }: CartContextProviderProps) {
         setCartItems(newCart);
     }
 
-    function cancelPurchase() {
+    function cleanPurchase() {
         setCartItems([]);
     }
 
@@ -92,7 +92,7 @@ export function CartContextProvider({ children }: CartContextProviderProps) {
                 addingItemsToCart,
                 removeItemsToCart,
                 changedCartItems,
-                cancelPurchase,
+                cleanPurchase,
             }}>
             {children}
         </CartContext.Provider>
