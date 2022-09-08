@@ -13,8 +13,8 @@ import { useTheme } from 'styled-components';
 export function LandingPage() {
     const theme = useTheme();
     return (
-        <LandingPageContainer>
-            <LandingPageContent className="container">
+        <LandingPageContainer className="container">
+            <LandingPageContent>
                 <div>
                     <section>
                         <LandingPageTitle size="xl" color="grey_900">

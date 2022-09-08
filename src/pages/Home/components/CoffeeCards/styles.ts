@@ -45,9 +45,9 @@ export const Tags = styled.div`
 export const CoffeeName = styled(Title).attrs({
     size: 's',
     color: 'grey_800',
+    weight: '700',
 })`
-    font-weight: 700;
-    margin-bottom: 0.5rem;
+     margin-bottom: 0.5rem;
 `;
 
 export const CoffeeCardsDescription = styled(Text).attrs({
@@ -60,7 +60,7 @@ export const CoffeeCardsDescription = styled(Text).attrs({
 export const CoffeeCardsFooter = styled.div`
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 6px;
 

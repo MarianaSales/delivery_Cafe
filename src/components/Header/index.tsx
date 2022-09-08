@@ -15,8 +15,7 @@ export function Header() {
                 <NavLink to="/">
                     <img src={logo} alt="Um copo de café" />
                 </NavLink>
-            </div>
-            <ButtonContainer>
+                <ButtonContainer>
                 <LocationButton variant="purple">
                     <MapPinLine size={20} weight="fill" />
                     Fortaleza, CE
@@ -28,6 +27,7 @@ export function Header() {
                     </LocationButton>
                 </NavLink>
             </ButtonContainer>
+            </div>        
         </HeaderContainer>
     );
 }

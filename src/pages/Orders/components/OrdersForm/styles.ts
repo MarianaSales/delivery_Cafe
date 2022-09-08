@@ -29,8 +29,8 @@ export const FormSections = styled.section`
     padding: 0 40px;
     gap: 32px;
 
-    background: ${({ theme }) => theme['grey_100']};
-    color: ${({ theme }) => theme['grey_700']};
+    background: ${({ theme }) => theme.grey_100};
+    color: ${({ theme }) => theme.grey_700};
     border-radius: 6px;
 
     position: relative;
@@ -48,8 +48,8 @@ export const FormAddresses = styled.div`
     padding: 20 20px;
     gap: 16px;
 
-    background: ${({ theme }) => theme['grey_100']};
-    color: ${({ theme }) => theme['grey_700']};
+    background: ${({ theme }) => theme.grey_100};
+    color: ${({ theme }) => theme.grey_700};
     border-radius: 6px;
 
     width: 560px;
@@ -77,6 +77,6 @@ export const PaymentOptionsContainer = styled.div`
 
     > p {
         grid-column: span 3;
-        color: ${({ theme }) => theme['red_100']};
+        color: ${({ theme }) => theme.red_100};
     }
 `;

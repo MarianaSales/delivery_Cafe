@@ -7,7 +7,7 @@ import { PaymentOptions } from './PaymentOptions';
 import { FormSections, Label, OrdersFromContainer } from './styles';
 
 export function OrdersForm() {
-    const theme = useTheme();
+    const theme = useTheme()
 
     return (
         <OrdersFromContainer>

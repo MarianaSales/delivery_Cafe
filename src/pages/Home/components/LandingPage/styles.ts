@@ -4,10 +4,7 @@ import styled from 'styled-components';
 export const LandingPageContainer = styled.section`
     width: 100%;
     height: 34rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
+
 `;
 export const LandingPageContent = styled.div`
     display: flex;
