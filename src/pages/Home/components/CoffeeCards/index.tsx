@@ -44,7 +44,7 @@ export function CoffeeCards({ coffee }: CoffeeProps) {
             <img src={`/coffees/${coffee.photo}`} />
             <Tags>
                 {coffee.tags.map((tag) => (
-                    <span key={`S{coffee.id}${tag}`}>{tag}</span>
+                    <span key={`${coffee.id}${tag}`}>{tag}</span>
                 ))}
             </Tags>
 
@@ -67,9 +67,11 @@ export function CoffeeCards({ coffee }: CoffeeProps) {
                         onDecrease={handleDecrease}
                         quantity={quantity}
                     />
+                    {/* <NavLink to="/orders"> */}
                     <button onClick={handleAddToCart}>
                         <ShoppingCart size={22} weight="fill" />
                     </button>
+                    {/* </NavLink> */}
                 </AddCoffeeCardContainer>
             </CoffeeCardsFooter>
         </CoffeeCardsContainer>

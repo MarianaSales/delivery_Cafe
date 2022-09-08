@@ -32,7 +32,8 @@ export const InputContent = styled.div<InputContainerProps>`
     ${({ hasErrors }) =>
         hasErrors &&
         css`
-            border-color: ${({ theme }) => theme['red_100']};
+            border-color: ${({ theme }) => theme['grey_400']};
+            border-radius: 8px;
         `}
 `;
 

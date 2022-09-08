@@ -1,8 +1,9 @@
+import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import { Text, Title } from '../../../../components/Typography';
 
 export const CoffeeCardsContainer = styled.div`
-    width: 100;
+    width: 100%;
     background: ${({ theme }) => theme['grey_200']};
     border-radius: 6px 36px 6px 36px;
     padding: 1.25rem;
@@ -10,12 +11,13 @@ export const CoffeeCardsContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     text-align: center;
 
     > img {
         margin-top: -1.25rem;
-        width: 120px;
-        height: 120px;
+        width: 7.5rem;
+        height: 7.5rem;
     }
 `;
 
@@ -29,7 +31,7 @@ export const Tags = styled.div`
     margin-bottom: 1.25rem;
     flex-wrap: wrap;
 
-    > span {
+    span {
         background: ${({ theme }) => theme['yellow_300']};
         color: ${({ theme }) => theme['yellow_700']};
         font-size: ${({ theme }) => theme['tag']};
@@ -56,12 +58,13 @@ export const CoffeeCardsDescription = styled(Text).attrs({
 `;
 
 export const CoffeeCardsFooter = styled.div`
+    width: 100%;
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     justify-content: space-between;
     align-items: center;
     /* padding: 0px; */
-    gap: 10px;
+    gap: 6px;
 
     > div {
         display: flex;
@@ -75,21 +78,11 @@ export const CoffeeCardsFooter = styled.div`
 `;
 
 export const AddCoffeeCardContainer = styled.div`
-    /* width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 38px; */
+    width: 7.5rem;
 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    /* padding: 0px; */
-
-    button {
-        width: 3rem;
-        height: 35px;
+    > button {
+        width: 2.375rem;
+        height: 2.375rem;
         border: none;
         display: flex;
 
@@ -99,6 +92,7 @@ export const AddCoffeeCardContainer = styled.div`
         color: ${({ theme }) => theme['grey_200']};
         gap: 5px;
         border-radius: 6px;
+        margin-left: 0.3rem;
         transition: 0.4s;
 
         flex-grow: 0;
@@ -107,8 +101,9 @@ export const AddCoffeeCardContainer = styled.div`
             background: ${({ theme }) => theme['purple_500']};
         }
         /* > svg {
-            height: 25px;
-            justify-content: space-between;
-        } */
+                background: ${({ theme }) => theme['purple_700']};
+                color: ${({ theme }) => theme['purple_700']};
+                height: 25px;
+            } */
     }
 `;

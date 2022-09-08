@@ -4,9 +4,10 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { useNavigate } from 'react-router-dom';
 import { useContext } from 'react';
 import { CartContext } from '../../context/CartContext';
-import { OrdersContainer } from './styles';
 import { OrdersForm } from './components/OrdersForm';
 import { SelectedItems } from './components/SelectedItems';
+import { SelectedItemsContainer } from './components/SelectedItems/styles';
+import { Container } from './styles';
 
 enum PaymentMethods {
     credit = 'credit',
@@ -42,6 +43,7 @@ export function Orders() {
             payment: undefined,
         },
     });
+    const { handleSubmit } = confirmOrdersForm;
     const navigate = useNavigate();
     const { cleanPurchase } = useContext(CartContext);
 
@@ -54,10 +56,10 @@ export function Orders() {
 
     return (
         <FormProvider {...confirmOrdersForm}>
-            <OrdersContainer className="container">
+            <Container>
                 <OrdersForm />
                 <SelectedItems />
-            </OrdersContainer>
+            </Container>
         </FormProvider>
     );
 }

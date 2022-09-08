@@ -7,6 +7,7 @@ export const HeaderContainer = styled.header`
     display: flex;
     align-items: center;
     justify-content: center;
+
     position: sticky;
     top: 0;
     left: 0;
@@ -18,18 +19,11 @@ export const HeaderContainer = styled.header`
         justify-content: space-between;
     }
 `;
-export const LogoContainer = styled.div`
-    max-width: 70rem;
-    margin-right: auto;
-    margin-left: auto;
-`;
 
 export const ButtonContainer = styled.div`
     display: flex;
     align-items: center;
     gap: 0.75rem;
-    margin-right: auto;
-    margin-left: auto;
 `;
 interface LocationButtonProps {
     variant: 'purple' | 'yellow';

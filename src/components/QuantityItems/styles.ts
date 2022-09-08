@@ -12,6 +12,7 @@ export const QuantityItemsContainer = styled.div<QuantityItemsProps>`
     justify-content: space-between;
     gap: 4px;
     border-radius: 6px;
+    padding: 0.5rem;
 
     input {
         text-align: center;
@@ -20,7 +21,7 @@ export const QuantityItemsContainer = styled.div<QuantityItemsProps>`
         border: none;
         color: ${({ theme }) => theme['grey_900']};
 
-        &:hover {
+        &:focus {
             outline: none;
         }
     }

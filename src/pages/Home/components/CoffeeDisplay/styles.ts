@@ -8,12 +8,14 @@ export const CoffeeDisplayContainer = styled.section`
     align-items: center;
     position: absolute;
     display: flex; */
+    margin-top: 2rem;
     position: absolute;
     height: 42px;
     top: 690px;
     width: 100%;
     display: grid;
-    left: calc(50% - 193px / 2 - 463.5px);
+    left: 0px;
+    right: 0px;
 `;
 
 export const CoffeeDisplayList = styled.div`

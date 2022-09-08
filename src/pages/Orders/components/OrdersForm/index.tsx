@@ -1,19 +1,21 @@
 import { CurrencyCircleDollar, MapPin } from 'phosphor-react';
 import { useTheme } from 'styled-components';
 import { Title } from '../../../../components/Typography';
-import { OrdersContainer, Section } from '../../styles';
 import { Sections } from '../Sections';
 import { AddressesForm } from './components/AddressesFrom';
-import { FormSections } from './styles';
+import { PaymentOptions } from './components/PaymentOptions';
+import { FormSections, Label, OrdersFromContainer } from './styles';
 
 export function OrdersForm() {
     const theme = useTheme();
 
     return (
-        <OrdersContainer>
-            <Title size="xs" color="grey_800">
-                Complete seu pedido
-            </Title>
+        <OrdersFromContainer>
+            <Label>
+                <Title size="s" color="grey_800">
+                    Complete seu pedido
+                </Title>
+            </Label>
             <FormSections>
                 <Sections
                     title="Endereço de Entrega"
@@ -22,14 +24,15 @@ export function OrdersForm() {
                 />
 
                 <AddressesForm />
-            </FormSections>
-            <FormSections>
+                {/* </FormSections>
+            <FormSections> */}
                 <Sections
                     title="Pagamento"
                     subtitle="O pagamento é feito na entrega. Escolha a forma que deseja pagar"
-                    icon={<CurrencyCircleDollar size={22} color={theme['purple_300']} />}
+                    icon={<CurrencyCircleDollar size={30} color={theme['purple_700']} />}
                 />
+                <PaymentOptions />
             </FormSections>
-        </OrdersContainer>
+        </OrdersFromContainer>
     );
 }

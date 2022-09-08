@@ -1,4 +1,4 @@
-import { MinusCircle, PlusCircle } from 'phosphor-react';
+import { Minus, Plus } from 'phosphor-react';
 import { IconsWrapper, QuantityItemsContainer } from './styles';
 
 interface QuantityItemsProps {
@@ -15,12 +15,12 @@ export function QuantityItems({
 }: QuantityItemsProps) {
     return (
         <QuantityItemsContainer size={size}>
-            <IconsWrapper onClick={onDecrease} disabled={quantity <= 1}>
-                <MinusCircle size={14} weight="fill" />
+            <IconsWrapper onClick={onDecrease} disabled={quantity < 1}>
+                <Minus size={14} weight="fill" />
             </IconsWrapper>
             <input type="number" readOnly value={quantity} />
             <IconsWrapper onClick={onIncrease}>
-                <PlusCircle size={14} weight="fill" />
+                <Plus size={14} weight="fill" />
             </IconsWrapper>
         </QuantityItemsContainer>
     );

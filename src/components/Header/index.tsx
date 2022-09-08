@@ -1,24 +1,34 @@
-import { ButtonContainer, HeaderContainer, LocationButton, LogoContainer } from './styles';
+import { ButtonContainer, HeaderContainer, LocationButton } from './styles';
 import logo from '../../assets/logo.svg';
 import { MapPinLine } from 'phosphor-react';
 import { ShoppingCartSimple } from 'phosphor-react';
+import { useContext } from 'react';
+import { CartContext } from '../../context/CartContext';
+import { NavLink } from 'react-router-dom';
 
 export function Header() {
+    const { cartQuantity } = useContext(CartContext);
+
     return (
         <HeaderContainer>
-            <LogoContainer>
-                <div className="container">
+            {/* <LogoContainer> */}
+            <div className="container">
+                <NavLink to="/">
                     <img src={logo} alt="Um copo de café" />
-                </div>
-            </LogoContainer>
+                </NavLink>
+            </div>
+            {/* </LogoContainer> */}
             <ButtonContainer>
                 <LocationButton variant="purple">
                     <MapPinLine size={20} weight="fill" />
                     Fortaleza, CE
                 </LocationButton>
-                <LocationButton variant="yellow">
-                    <ShoppingCartSimple size={24} weight="fill" />3
-                </LocationButton>
+                <NavLink to="/orders">
+                    <LocationButton variant="yellow">
+                        <ShoppingCartSimple size={24} weight="fill" />
+                        {cartQuantity > 1 && <span>{cartQuantity}</span>}
+                    </LocationButton>
+                </NavLink>
             </ButtonContainer>
         </HeaderContainer>
     );

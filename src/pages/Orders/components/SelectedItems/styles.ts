@@ -1,17 +1,46 @@
 import styled from 'styled-components';
-import { Section } from '../../styles';
 
 export const SelectedItemsContainer = styled.div`
     display: flex;
     flex-direction: column;
-    gap: 0.75rem;
-    width: 40rem;
+    align-items: flex-start;
+    padding: 40px;
+    gap: 24px;
+
+    position: absolute;
+    width: 448px;
+    height: 498px;
+    left: 832px;
+    top: 182px;
 `;
 
-export const DetailsContainer = styled(Section)`
+export const Label = styled.div`
+    display: flex;
+    align-items: center;
+
+    /* position: absolute; */
+    width: 448px;
+    height: 23px;
+    left: 160px;
+    top: 144px;
+`;
+
+export const DetailsContainer = styled.section`
     display: flex;
     flex-direction: column;
-    border-radius: 6px 44px 6px 44px;
+    align-items: center;
+    padding: 40px;
+    gap: 24px;
+
+    /* position: absolute; */
+    width: 448px;
+    height: 498px;
+    left: 832px;
+    top: 182px;
+
+    background: ${({ theme }) => theme['grey_100']};
+    color: ${({ theme }) => theme['grey_700']};
+    border-radius: 6px 44px;
 `;
 
 export const ConfirmationsContainer = styled.section`
