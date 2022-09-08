@@ -67,11 +67,9 @@ export function CoffeeCards({ coffee }: CoffeeProps) {
                         onDecrease={handleDecrease}
                         quantity={quantity}
                     />
-                    {/* <NavLink to="/orders"> */}
                     <button onClick={handleAddToCart}>
                         <ShoppingCart size={22} weight="fill" />
                     </button>
-                    {/* </NavLink> */}
                 </AddCoffeeCardContainer>
             </CoffeeCardsFooter>
         </CoffeeCardsContainer>

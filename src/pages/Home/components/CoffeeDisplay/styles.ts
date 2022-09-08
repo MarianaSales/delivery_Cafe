@@ -1,13 +1,6 @@
 import styled from 'styled-components';
 
 export const CoffeeDisplayContainer = styled.section`
-    /* width: 193px;
-    top: 690px;
-    left: calc(50% - 193px / 2 - 463.5px);
-    height: 42px;
-    align-items: center;
-    position: absolute;
-    display: flex; */
     margin-top: 2rem;
     position: absolute;
     height: 42px;

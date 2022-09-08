@@ -6,8 +6,7 @@ import { useContext } from 'react';
 import { CartContext } from '../../context/CartContext';
 import { OrdersForm } from './components/OrdersForm';
 import { SelectedItems } from './components/SelectedItems';
-import { SelectedItemsContainer } from './components/SelectedItems/styles';
-import { Container } from './styles';
+import { OrdersContainer } from './styles';
 
 enum PaymentMethods {
     credit = 'credit',
@@ -56,10 +55,10 @@ export function Orders() {
 
     return (
         <FormProvider {...confirmOrdersForm}>
-            <Container>
+            <OrdersContainer>
                 <OrdersForm />
                 <SelectedItems />
-            </Container>
+            </OrdersContainer>
         </FormProvider>
     );
 }

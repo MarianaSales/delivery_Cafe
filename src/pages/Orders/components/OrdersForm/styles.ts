@@ -4,28 +4,17 @@ export const OrdersFromContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-<<<<<<< Updated upstream
     padding: 0 40px;
     gap: 8px;
 
     position: absolute;
     width: 640px;
     height: 591px;
-=======
-    padding: 40px;
-    gap: 32px;
-
-    width: 640px;
-    height: 372px;
-
-    border-radius: 6px;
->>>>>>> Stashed changes
 `;
 export const Label = styled.div`
     display: flex;
     align-items: center;
 
-    /* position: absolute; */
     width: 100%;
     height: 23px;
     left: 832px;
@@ -52,15 +41,6 @@ export const FormSections = styled.section`
 `;
 
 export const FormAddresses = styled.div`
-    /* display: grid;
-    flex-direction: column;
-    align-items: flex-start;
-    grid-template-columns: 12.5rem 17.25rem 3.75rem;
-    column-gap: 0.75rem;
-    row-gap: 1rem;
-    padding: 30px;
-    grid-auto-flow: dense; */
-
     display: grid;
     flex-direction: column;
     align-items: center;
@@ -74,9 +54,6 @@ export const FormAddresses = styled.div`
 
     width: 560px;
     height: 216px;
-
-    /* width: 100%;
-    height: 372px; */
 
     .cep {
         grid-column: span 3;

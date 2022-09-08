@@ -60,10 +60,8 @@ export const CoffeeCardsDescription = styled(Text).attrs({
 export const CoffeeCardsFooter = styled.div`
     width: 100%;
     display: flex;
-    /* flex-direction: row; */
     justify-content: space-between;
     align-items: center;
-    /* padding: 0px; */
     gap: 6px;
 
     > div {
@@ -100,10 +98,5 @@ export const AddCoffeeCardContainer = styled.div`
         &:hover {
             background: ${({ theme }) => theme['purple_500']};
         }
-        /* > svg {
-                background: ${({ theme }) => theme['purple_700']};
-                color: ${({ theme }) => theme['purple_700']};
-                height: 25px;
-            } */
     }
 `;

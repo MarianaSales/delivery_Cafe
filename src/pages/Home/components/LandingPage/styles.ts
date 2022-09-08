@@ -3,16 +3,13 @@ import styled from 'styled-components';
 
 export const LandingPageContainer = styled.section`
     width: 100%;
-    /* height: 544px; */
     height: 34rem;
     display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
-    /* padding: 32px 160px; */
 `;
 export const LandingPageContent = styled.div`
-    /* width: 100%; */
     display: flex;
     align-items: center;
     justify-content: space-between;

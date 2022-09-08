@@ -13,14 +13,6 @@ interface TextProps {
 }
 
 export const Title = styled.h1<TitleProps>`
-    /* position: absolute;
-    width: 170px;
-    height: 23px;
-    left: 260px;
-    top: 144px;
-    display: flex;
-    align-items: center; */
-
     color: ${({ color, theme }) => theme[`${color ?? 'grey_700'}`]};
     font-size: ${({ size, theme }) => theme[`${size ?? 'm'}`]};
     font-family: 'Baloo 2', sans-serif;

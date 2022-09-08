@@ -11,13 +11,11 @@ export function Header() {
 
     return (
         <HeaderContainer>
-            {/* <LogoContainer> */}
             <div className="container">
                 <NavLink to="/">
                     <img src={logo} alt="Um copo de café" />
                 </NavLink>
             </div>
-            {/* </LogoContainer> */}
             <ButtonContainer>
                 <LocationButton variant="purple">
                     <MapPinLine size={20} weight="fill" />
