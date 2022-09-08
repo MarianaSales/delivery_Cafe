@@ -1,9 +1,9 @@
 import { useFormContext } from 'react-hook-form';
-import { Text } from '../../../../../components/Typography';
-import { PaymentMethod } from '../../PaymentMethod';
-import { PaymentOptionsContainer } from '../styles';
 
 import { CreditCard, Money, Wallet } from 'phosphor-react';
+import { PaymentOptionsContainer } from './styles';
+import { PaymentMethod } from '../PaymentMethod';
+import { Text } from '../../../../components/Typography';
 
 export const paymentMethodos = {
     credit: {

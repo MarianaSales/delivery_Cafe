@@ -55,11 +55,11 @@ export function CartContextProvider({ children }: CartContextProviderProps) {
 
     function changedCartItems(itemId: number, type: 'increase' | 'decrease') {
         const newCart = produce(cartItems, (draft) => {
-            const shoppingCart = cartItems.findIndex((item) => item.id === itemId);
+            const shoppingCart = cartItems.findIndex((cartItem) => cartItem.id === itemId);
             if (shoppingCart >= 0) {
-                const items = draft[shoppingCart];
+                const item = draft[shoppingCart];
                 draft[shoppingCart].quantity =
-                    type === 'increase' ? items.quantity + 1 : items.quantity - 1;
+                    type === 'increase' ? item.quantity + 1 : item.quantity - 1;
             }
         });
         setCartItems(newCart);

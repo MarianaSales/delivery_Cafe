@@ -5,9 +5,10 @@ import { useTheme } from 'styled-components';
 import { InformationIcons } from '../../components/InformationIcons';
 import { Text, Title } from '../../components/Typography';
 import { OrdersData } from '../Orders';
-import { paymentMethodos } from '../Orders/components/OrdersForm/components/PaymentOptions';
+
 import { OrderConfirmedContainer, OrderConfirmedDetailsContainer } from './styles';
 import deliveryImg from '../../assets/img/motoboy.svg';
+import { paymentMethodos } from '../Orders/components/OrdersForm/PaymentOptions';
 interface LocationType {
     state: OrdersData;
 }

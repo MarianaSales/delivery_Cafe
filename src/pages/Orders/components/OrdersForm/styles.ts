@@ -4,12 +4,22 @@ export const OrdersFromContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+<<<<<<< Updated upstream
     padding: 0 40px;
     gap: 8px;
 
     position: absolute;
     width: 640px;
     height: 591px;
+=======
+    padding: 40px;
+    gap: 32px;
+
+    width: 640px;
+    height: 372px;
+
+    border-radius: 6px;
+>>>>>>> Stashed changes
 `;
 export const Label = styled.div`
     display: flex;

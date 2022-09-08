@@ -56,7 +56,11 @@ export function Orders() {
 
     return (
         <FormProvider {...confirmOrdersForm}>
+<<<<<<< Updated upstream
             <Container>
+=======
+            <OrdersContainer>
+>>>>>>> Stashed changes
                 <OrdersForm />
                 <SelectedItems />
             </Container>

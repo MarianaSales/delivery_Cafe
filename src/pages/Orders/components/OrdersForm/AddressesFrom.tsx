@@ -1,6 +1,6 @@
 import { useFormContext } from 'react-hook-form';
-import { Input } from '../../../../../components/Input';
-import { FormAddresses } from '../styles';
+import { Input } from '../../../../components/Input';
+import { FormAddresses } from './styles';
 
 interface ErrorType {
     errors: {

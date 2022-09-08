@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const SelectedItemsContainer = styled.div`
     display: flex;
     flex-direction: column;
+<<<<<<< Updated upstream
     align-items: flex-start;
     padding: 40px;
     gap: 24px;
@@ -33,24 +34,35 @@ export const DetailsContainer = styled.section`
     gap: 24px;
 
     /* position: absolute; */
+=======
+    align-items: center;
+    padding: 40px;
+    gap: 24px;
+
+    position: absolute;
+>>>>>>> Stashed changes
     width: 448px;
     height: 498px;
     left: 832px;
     top: 182px;
+<<<<<<< Updated upstream
 
     background: ${({ theme }) => theme['grey_100']};
     color: ${({ theme }) => theme['grey_700']};
+=======
+>>>>>>> Stashed changes
     border-radius: 6px 44px;
 `;
 
-export const ConfirmationsContainer = styled.section`
+export const DetailsContainer = styled.section`
     display: flex;
-    flex-direction: column;
-    gap: 0.8rem;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 8px 4px;
+    gap: 59px;
 
-    > div {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
+    width: 368px;
+    height: 80px;
+    background: ${({ theme }) => theme['grey_200']};
 `;

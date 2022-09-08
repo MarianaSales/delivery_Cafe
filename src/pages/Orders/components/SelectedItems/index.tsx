@@ -16,8 +16,8 @@ export function SelectedItems() {
                 </Title>
             </Label>
             <DetailsContainer>
-                {cartItems.map((item) => (
-                    <CartCard key={item.id} coffee={item} />
+                {cartItems.map((cartItem) => (
+                    <CartCard key={cartItem.id} coffee={cartItem} />
                 ))}
                 <Confirmation />
             </DetailsContainer>
