@@ -55,7 +55,7 @@ export function Orders() {
 
     return (
         <FormProvider {...confirmOrdersForm}>
-            <OrdersContainer>
+            <OrdersContainer className="container">
                 <OrdersForm />
                 <SelectedItems />
             </OrdersContainer>

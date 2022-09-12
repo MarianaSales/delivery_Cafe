@@ -1,4 +1,3 @@
-import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import { Text, Title } from '../../../../components/Typography';
 
@@ -60,9 +59,8 @@ export const CoffeeCardsDescription = styled(Text).attrs({
 export const CoffeeCardsFooter = styled.div`
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 6px;
 
     > div {
         display: flex;
@@ -88,7 +86,6 @@ export const AddCoffeeCardContainer = styled.div`
         justify-content: center;
         background: ${({ theme }) => theme['purple_700']};
         color: ${({ theme }) => theme['grey_200']};
-        gap: 5px;
         border-radius: 6px;
         margin-left: 0.3rem;
         transition: 0.4s;

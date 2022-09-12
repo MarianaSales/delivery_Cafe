@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 import { ThemeType } from './themes/default';
-import back from '../assets/img/back.svg';
+
 
 export const GlobalStyles = createGlobalStyle<{ theme: ThemeType }>`
   * {
@@ -13,7 +13,6 @@ export const GlobalStyles = createGlobalStyle<{ theme: ThemeType }>`
   body {
     -webkit-font-smoothing: antialiased;
     background-color: ${(props) => props.theme['grey_100']};
-    background: url(${back}) no-repeat center center fixed;
     color: ${(props) => props.theme['grey_700']};
     -webkit-background-size: cover;
     -moz-background-size: cover;

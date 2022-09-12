@@ -15,26 +15,25 @@ interface InputContainerProps {
     hasErrors: boolean;
 }
 
-export const InputContent = styled.div<InputContainerProps>`
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+export const InputContent = styled.input`
     height: 2.625rem;
     background: ${({ theme }) => theme['grey_300']};
     border: 1px solid ${({ theme }) => theme['grey_400']};
-    overflow: hidden;
     transition: 0.4s;
 
-    &:focus-within {
+    &:focus {
         border-color: ${({ theme }) => theme['yellow_700']};
     }
 
-    ${({ hasErrors }) =>
-        hasErrors &&
-        css`
-            border-color: ${({ theme }) => theme['grey_400']};
-            border-radius: 8px;
-        `}
+    color: ${({ theme }) => theme['grey_700']};
+    font-size: 0.75rem;
+    padding: 0 0.75rem;
+
+    &::placeholder {
+        color: ${({ theme }) => theme['grey_600']};
+    }
+
+   
 `;
 
 export const InputStyle = styled.input`

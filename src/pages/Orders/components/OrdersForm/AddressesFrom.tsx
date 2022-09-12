@@ -25,6 +25,12 @@ export function AddressesForm() {
             />
             <Input
                 type="number"
+                placeholder="Rua"
+                {...register('street')}
+                error={errors.number?.message}
+            />
+            <Input
+                type="number"
                 placeholder="Número"
                 {...register('number')}
                 error={errors.number?.message}
