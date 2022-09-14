@@ -1,4 +1,4 @@
-# delivery_cafe 
+# Kiki's Delivery Service (nome da minha animação favorita só porque foi um projeto pessoal para o desafio o nome tem direitos autorais)
 Desafio Ignite 2022 - Trilha atualizada
 
 Nesse projeto foi utilizado
