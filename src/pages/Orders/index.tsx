@@ -15,14 +15,14 @@ enum PaymentMethods {
 }
 
 const confirmOrderValidationSchema = zod.object({
-    city: zod.string().min(1, 'Informe sua cidade'),
+    city: zod.string().min(1, 'Informe sua Cidade'),
     uf: zod.string().min(1, 'Informe seu Estado'),
-    district: zod.string().min(1, 'Informe seu Bairro'),
+    district: zod.string().min(1, 'Informe seu bairro'),
     cep: zod.string().min(1, 'Informe seu CEP'),
-    street: zod.string().min(1, 'Informe a Rua'),
+    street: zod.string().min(1, 'Informe a rua'),
     number: zod.string().min(1, 'Informe o número'),
     complement: zod.string().optional(),
-    payment: zod.nativeEnum(PaymentMethods, {
+    paymentMethod: zod.nativeEnum(PaymentMethods, {
         errorMap: () => {
             return {
                 message: 'Informe o método de pagamento',
@@ -38,9 +38,6 @@ type ConfirmOrdersFormData = OrdersData;
 export function Orders() {
     const confirmOrdersForm = useForm<ConfirmOrdersFormData>({
         resolver: zodResolver(confirmOrderValidationSchema),
-        defaultValues: {
-            payment: undefined,
-        },
     });
     const { handleSubmit } = confirmOrdersForm;
     const navigate = useNavigate();

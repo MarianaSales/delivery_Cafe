@@ -1,5 +1,4 @@
 import { Clock, CurrencyDollar, MapPin } from 'phosphor-react';
-import { useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { useTheme } from 'styled-components';
 import { InformationIcons } from '../../components/InformationIcons';
@@ -9,22 +8,22 @@ import { OrdersData } from '../Orders';
 import { OrderConfirmedContainer, OrderConfirmedDetailsContainer } from './styles';
 import deliveryImg from '../../assets/img/motoboy.svg';
 import { paymentMethodos } from '../Orders/components/OrdersForm/PaymentOptions';
+import { useEffect } from 'react';
 interface LocationType {
     state: OrdersData;
 }
 
 export function OrderConfirmed() {
     const theme = useTheme();
-    // const { state } = useLocation() as unknown as LocationType;
-    // const navigate = useNavigate();
+    const { state } = useLocation() as unknown as LocationType;
+    const navigate = useNavigate();
 
-    // useEffect(() => {
-    //     if (!state) {
-    //         navigate('/');
-    //     }
-    // }, []);
-
-    // if (!state) return <></>;
+    useEffect(() => {
+        if (!state) {
+            navigate('/');
+        }
+    }, []);
+    if (!state) return <></>;
 
     return (
         <OrderConfirmedContainer className="container">
@@ -42,8 +41,12 @@ export function OrderConfirmed() {
                         iconColor={theme['purple_500']}
                         text={
                             <Text>
-                                Entrega em <strong>Rua G, 102</strong> <br />
-                                Centro, Fortaleza, CE
+                                Entrega em{' '}
+                                <strong>
+                                    {state.street}, {state.number}
+                                </strong>{' '}
+                                <br />
+                                {state.district}, {state.city}, {state.uf}
                             </Text>
                         }
                     />
@@ -65,7 +68,7 @@ export function OrderConfirmed() {
                             <Text>
                                 Pagamento na entrega
                                 <br />
-                                <strong>Cartão de Crédito</strong>
+                                <strong>{paymentMethodos[state.paymentMethod].label}</strong>
                             </Text>
                         }
                     />

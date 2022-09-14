@@ -11,39 +11,37 @@ export const InputContainer = styled.div`
     }
 `;
 
-interface InputContainerProps {
+interface InputContenrProps {
     hasErrors: boolean;
 }
 
-export const InputContent = styled.input`
+export const InputContent = styled.div<InputContenrProps>`
     height: 2.625rem;
     background: ${({ theme }) => theme['grey_300']};
     border: 1px solid ${({ theme }) => theme['grey_400']};
     transition: 0.4s;
-    border-radius: 6px;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    overflow: hidden;
 
-    &:focus {
+    &:focus-within {
         border-color: ${({ theme }) => theme['yellow_700']};
-    }
+    }  
 
-    color: ${({ theme }) => theme['grey_700']};
-    font-size: 0.75rem;
-    padding: 0 0.75rem;
-
-    &::placeholder {
-        color: ${({ theme }) => theme['grey_600']};
-        
-    }
-
-   
+    ${({ theme, hasErrors }) => hasErrors && css`
+    border-color: ${({theme})=> theme['red_100']}`}
 `;
 
 export const InputStyle = styled.input`
     flex: 1;
+    background: none;
     border: none;
-    height: 100%;
-    padding: 0 0.75rem;
     color: ${({ theme }) => theme['grey_700']};
+    font-size: 0.75rem;
+    padding: 0 0.75rem;
+    height: 100%;
 
     &::placeholder {
         color: ${({ theme }) => theme['grey_600']};

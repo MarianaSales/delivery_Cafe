@@ -1,12 +1,6 @@
 import styled, { css } from 'styled-components';
 
 export const PaymentMethodContainer = styled.div`
-    padding: 0 1rem;
-
-    input {
-        visibility: hidden;
-        appearance: none;
-    }
 
     input:checked + label div {
         ${({ theme }) => css`
@@ -20,7 +14,7 @@ export const PaymentMethodContainer = styled.div`
     }
 `;
 
-export const PaymentMethodContent = styled.div`
+export const ContentContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: flex-start;
