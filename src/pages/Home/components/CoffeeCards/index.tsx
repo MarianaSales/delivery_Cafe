@@ -21,14 +21,6 @@ export function CoffeeCards({ coffee }: CoffeeProps) {
     const [quantity, setQuantity] = useState(0);
     const { addingItemsToCart } = useContext(CartContext);
 
-    function handleIncrease() {
-        setQuantity((state) => state + 1);
-    }
-
-    function handleDecrease() {
-        setQuantity((state) => state - 1);
-    }
-
     function handleAddToCart() {
         const addToCart = {
             ...coffee,
@@ -37,10 +29,18 @@ export function CoffeeCards({ coffee }: CoffeeProps) {
         addingItemsToCart(addToCart);
     }
 
+    function handleIncrease() {
+        setQuantity((state) => state + 1);
+    }
+
+    function handleDecrease() {
+        setQuantity((state) => state - 1);
+    }
+
     const formattedPrice = formatMoney(coffee.price);
 
     return (
-        <CoffeeCardsContainer className='container'>
+        <CoffeeCardsContainer className="container">
             <img src={`/coffees/${coffee.photo}`} />
             <Tags>
                 {coffee.tags.map((tag) => (

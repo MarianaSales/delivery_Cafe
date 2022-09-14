@@ -1,6 +1,8 @@
 import styled, { css } from 'styled-components';
 
 export const PaymentMethodContainer = styled.div`
+    padding: 0 1rem;
+
     input {
         visibility: hidden;
         appearance: none;

@@ -9,7 +9,6 @@ export const OrdersContainer = styled.form`
 
 export const SectionsContainer = styled.div`
 width:100%;
-background: ${({ theme }) => theme['grey_200']};
-border-radius: 6px;
+/* border-radius: 6px; */
 padding: 2.5rem;
 `

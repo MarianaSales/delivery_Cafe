@@ -1,4 +1,4 @@
-import produce from 'immer';
+import { produce } from 'immer';
 import { createContext, ReactNode, useEffect, useState } from 'react';
 import { Coffees } from '../components/interfaces';
 

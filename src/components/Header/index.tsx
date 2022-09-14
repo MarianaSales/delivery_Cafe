@@ -16,18 +16,18 @@ export function Header() {
                     <img src={logo} alt="Um copo de café" />
                 </NavLink>
                 <ButtonContainer>
-                <LocationButton variant="purple">
-                    <MapPinLine size={20} weight="fill" />
-                    Fortaleza, CE
-                </LocationButton>
-                <NavLink to="/orders">
-                    <LocationButton variant="yellow">
-                        <ShoppingCartSimple size={24} weight="fill" />
-                        {cartQuantity > 1 && <span>{cartQuantity}</span>}
+                    <LocationButton variant="purple">
+                        <MapPinLine size={20} weight="fill" />
+                        Fortaleza, CE
                     </LocationButton>
-                </NavLink>
-            </ButtonContainer>
-            </div>        
+                    <NavLink to="/orders">
+                        <LocationButton variant="yellow">
+                            <ShoppingCartSimple size={24} weight="fill" />
+                            {cartQuantity >= 1 && <span>{cartQuantity}</span>}
+                        </LocationButton>
+                    </NavLink>
+                </ButtonContainer>
+            </div>
         </HeaderContainer>
     );
 }

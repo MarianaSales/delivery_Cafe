@@ -23,14 +23,16 @@ export const OrderConfirmedDetailsContainer = styled.div`
     gap: 2rem;
     position: relative;
     padding: 2.5rem;
-    background: ${({ theme }) => theme['grey_100']};
+    border-radius: 6px 36px 6px 36px;
+    background: ${({ theme }) => theme['grey_200']};
     min-width: 32rem;
 
     &::before {
-        content: '';
+        content: "";
         position: absolute;
         inset: -1px;
         z-index: -1;
+        border-radius: 7px 37px 7px 37px;
         background: linear-gradient(102.82deg, #dbac2c 2.61%, #8047f8 98.76%);
     }
 `;

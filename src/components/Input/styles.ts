@@ -20,6 +20,7 @@ export const InputContent = styled.input`
     background: ${({ theme }) => theme['grey_300']};
     border: 1px solid ${({ theme }) => theme['grey_400']};
     transition: 0.4s;
+    border-radius: 6px;
 
     &:focus {
         border-color: ${({ theme }) => theme['yellow_700']};
@@ -31,6 +32,7 @@ export const InputContent = styled.input`
 
     &::placeholder {
         color: ${({ theme }) => theme['grey_600']};
+        
     }
 
    

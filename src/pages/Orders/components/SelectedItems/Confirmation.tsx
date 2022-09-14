@@ -9,7 +9,7 @@ const DELIVERY_PRICE = 4;
 
 export function Confirmation() {
     const { cartQuantity, itemsTotal } = useContext(CartContext);
-    const totalPrice = DELIVERY_PRICE * itemsTotal;
+    const totalPrice = DELIVERY_PRICE + itemsTotal;
 
     const formattedItemsTotal = formatMoney(itemsTotal);
     const formattedTotalPrice = formatMoney(totalPrice);
@@ -33,12 +33,7 @@ export function Confirmation() {
                     R$ {formattedTotalPrice}
                 </Text>
             </div>
-            <Button
-                text="Confirmar pedido"
-                disabled={cartQuantity <= 0}
-                type="submit"
-                color="yellow_700"
-            />
+            <Button text="Confirmar pedido" disabled={cartQuantity <= 0} type="submit" />
         </ConfirmationContainer>
     );
 }

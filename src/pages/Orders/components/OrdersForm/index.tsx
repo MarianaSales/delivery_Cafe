@@ -1,4 +1,4 @@
-import { CurrencyCircleDollar, MapPinLine } from 'phosphor-react';
+import { CurrencyDollar, MapPinLine } from 'phosphor-react';
 import { useTheme } from 'styled-components';
 import { Title } from '../../../../components/Typography';
 import { Sections } from '../Sections';
@@ -26,7 +26,7 @@ export function OrdersForm() {
                 <Sections
                     title="Pagamento"
                     subtitle="O pagamento é feito na entrega. Escolha a forma que deseja pagar"
-                    icon={<CurrencyCircleDollar size={22} color={theme['purple_500']} />}
+                    icon={<CurrencyDollar size={22} color={theme['purple_500']} />}
                 />
                 <PaymentOptions />
             </FormSections>

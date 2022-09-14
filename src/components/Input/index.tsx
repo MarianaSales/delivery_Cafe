@@ -1,6 +1,5 @@
 import { forwardRef, InputHTMLAttributes } from 'react';
-import { InputContainer, InputContent, InputStyle, TextStyle } from './styles';
-import { Text } from '../Typography';
+import { InputContent } from './styles';
 
 type InputProps = InputHTMLAttributes<HTMLInputElement>;
 // & {
@@ -8,20 +7,6 @@ type InputProps = InputHTMLAttributes<HTMLInputElement>;
 //     textStyle?: string;
 // };
 
-// export const Input = forwardRef<HTMLInputElement, InputProps>(
-//     ({ error, textStyle, className, ...props }, ref) => {
-//         return (
-//             <InputContainer className={className}>
-//                 <InputContent hasErrors={!error}>
-//                     <InputStyle ref={ref} {...props} />
-//                     {textStyle && <TextStyle>{textStyle}</TextStyle>}
-//                 </InputContent>
-//                 {error && <Text>{error}</Text>}
-//             </InputContainer>
-//         );
-//     }
-// );
-
-export function Input({ ...props }) {
-    return <InputContent {...props} />;
-}
+export const Input = forwardRef<HTMLInputElement, InputProps>((props, ref) => {
+    return <InputContent {...props} ref={ref} />;
+});

@@ -55,7 +55,7 @@ export function Orders() {
 
     return (
         <FormProvider {...confirmOrdersForm}>
-            <OrdersContainer className="container">
+            <OrdersContainer className="container" onSubmit={handleSubmit(handleConfirmOrder)}>
                 <OrdersForm />
                 <SelectedItems />
             </OrdersContainer>

@@ -8,8 +8,10 @@ export const CartCardContainer = styled.div`
 
     margin-bottom: 1.5rem;
     padding-bottom: 1.5rem;
+    background: ${({ theme }) => theme['grey_200']};
+    color: ${({ theme }) => theme['grey_700']};
     border-bottom: 1px solid ${({ theme }) => theme['grey_400']};
-
+   
     > div {
         display: flex;
         align-items: center;
@@ -32,6 +34,7 @@ export const PurchasesContainer = styled.div`
     align-items: center;
     margin-top: 0.5rem;
     gap: 0.5rem;
+    height: 2rem;
 
     > div {
         max-width: 4.5rem;
@@ -45,6 +48,8 @@ export const RemoveButtons = styled.button`
     background: ${({ theme }) => theme['grey_400']};
     color: ${({ theme }) => theme['grey_700']};
     height: 100%;
+    gap: 0.25rem;
+    font-size: 0.75rem;
     border: none;
     padding: 0 0.5rem;
     border-radius: 6px;

@@ -1,4 +1,4 @@
-import { Clock, CurrencyCircleDollar, MapPin } from 'phosphor-react';
+import { Clock, CurrencyDollar, MapPin } from 'phosphor-react';
 import { useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { useTheme } from 'styled-components';
@@ -15,19 +15,19 @@ interface LocationType {
 
 export function OrderConfirmed() {
     const theme = useTheme();
-    const { state } = useLocation() as unknown as LocationType;
-    const navigate = useNavigate();
+    // const { state } = useLocation() as unknown as LocationType;
+    // const navigate = useNavigate();
 
-    useEffect(() => {
-        if (!state) {
-            navigate('/');
-        }
-    }, []);
+    // useEffect(() => {
+    //     if (!state) {
+    //         navigate('/');
+    //     }
+    // }, []);
 
-    if (!state) return <></>;
+    // if (!state) return <></>;
 
     return (
-        <OrderConfirmedContainer>
+        <OrderConfirmedContainer className="container">
             <div>
                 <Title size="l">Uhu! Pedido confirmado</Title>
                 <Text size="l" color="grey_800">
@@ -42,8 +42,8 @@ export function OrderConfirmed() {
                         iconColor={theme['purple_500']}
                         text={
                             <Text>
-                                Entrega em <strong>{state.street}</strong>, {state.number} <br />
-                                {state.district} - {state.city}, {state.uf}
+                                Entrega em <strong>Rua G, 102</strong> <br />
+                                Centro, Fortaleza, CE
                             </Text>
                         }
                     />
@@ -59,13 +59,13 @@ export function OrderConfirmed() {
                         }
                     />
                     <InformationIcons
-                        icon={<CurrencyCircleDollar weight="fill" />}
+                        icon={<CurrencyDollar weight="fill" />}
                         iconColor={theme['yellow_700']}
                         text={
                             <Text>
                                 Pagamento na entrega
                                 <br />
-                                <strong>{paymentMethodos[state.payment].label}</strong>
+                                <strong>Cartão de Crédito</strong>
                             </Text>
                         }
                     />

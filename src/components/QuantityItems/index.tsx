@@ -2,7 +2,7 @@ import { Minus, Plus } from 'phosphor-react';
 import { IconsWrapper, QuantityItemsContainer } from './styles';
 
 interface QuantityItemsProps {
-    size: 'medium' | 'small';
+    size?: 'medium' | 'small';
     quantity: number;
     onIncrease: () => void;
     onDecrease: () => void;

@@ -43,15 +43,38 @@ export const LocationButton = styled.button<LocationButtonProps>`
     position: relative;
     font-size: 0.875rem;
     color: ${({ variant, theme }) => theme[`${variant}_500`]};
+    cursor: inherit;
+    
+    span {
+      position: absolute;
+      width: 1.25rem;
+      height: 1.25rem;
+      border-radius: 50%;
+      top: calc(-1.25rem / 2);
+      right: calc(-1.25rem / 2);
+      color: ${({ theme }) => theme['white']};
+      
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.75rem;
+      font-weight: 700;
+    }
 
     ${({ variant, theme }) =>
         css`
              {
                 background: ${theme[`${variant}_300`]};
+                color: ${theme[`${variant}_700`]};
+
+                span{
+                    background: ${theme[`${variant}_700`]};
+                }
             }
         `};
 
     ${({ variant, theme }) =>
+    variant === 'purple' &&
         css`
             svg {
                 color: ${theme[`${variant}_500`]};
